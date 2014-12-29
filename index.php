@@ -28,6 +28,8 @@ $page = 'home';
 		<script src="../../assets/js/html5shiv.js"></script>
 		<script src="../../assets/js/respond.min.js"></script>
 		<!--[endif]-->
+
+		<script src="js/modernizr.js"></script>
         
 	</head>
 	
@@ -44,15 +46,15 @@ $page = 'home';
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 		        </button>
-			    <a class="navbar-brand" href="/">
+			    <a class="navbar-brand" href="index.php">
 			      	<img src="images/LoopLogo.png" alt="Loop Logo" />
 			    </a>
 		    </div>
 			<div class="collapse navbar-collapse site-nav" role="navigation">
 			  <ul class="nav navbar-nav">
-			   	<li><a href="http://www.ekoapp.com/about">About Us</a></li>
+			   	<li><a href="#about">About Us</a></li>
 			   	<li><a href="http://www.ekoapp.com" target="_blank">Eko</a></li>
-				<li><a href="http://www.ekoapp.com/jobs">Contact</a></li>
+				<li><a href="#contact">Contact</a></li>
 			  </ul>	
 			</div>
 	    </div>
@@ -60,82 +62,289 @@ $page = 'home';
 	<!---End of Navigation Bar-->
 
 
-	<!-- Main jumbotron for a primary marketing message or call to action -->
-	    <div class="jumbotron header-jumbotron">
-	      <div class="container">
-	      	<div class="row">
-	      		<div id="cta-title" class="col-sm-6 col-lg-5 col-lg-offset-1">
-			        <div class="text">
-						<img src="images/LoopLogoWords.png" class="img-responsive" alt="Loop">
-						<br><br>
-						<h3>Yes. No.<br> Get an answer. <br> Close the loop.</h3>
-						<br>
-					</div>
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-				    
-					<p class="button-row">
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(images/slide1.jpg);"></div>
+                <div class="sliderbuttons">
+                		<p>
 				      	<a href="https://itunes.apple.com/us/app/loop-by-eko/id931539244?mt=8", target="itunes_store" button type="button" class="btn btn-default btn-store"><img src="images/badge-store-ios.svg" height="30" width="30"> App Store</a>
 				      	<a href="https://play.google.com/store/apps/details?id=com.ekoapp.loop&hl=en" target="_blank" button type="button" class="btn btn-default btn-store pull-right"><img src="images/badge-store-play.svg" height="30" width="30"> Play Store</a>
-				    </p>
-				    </p>
-		        </div>
-
-		        
-		         <div class="col-sm-6 screenshot-device">
-		        	<img src="images/landing.png" class="img-responsive" alt="Responsive image">
-		        </div>
-		        
-
-		      </div>
-	    	</div>
-	    </div>
-
-
-		
-		<div class="section team full-panel hidden-xs">
-			<div class="container">
-				<div class="row">
-					
-					<div class="col-sm-7 screenshot-device3">
-					<p>&nbsp;</p>
-		        	<img src="images/2ndpanel.png" class="img-responsive" alt="Responsive image">
-						
-					</div>
-					<div class="col-sm-5 padded-text">
-						<h3>It's that simple.</h3>
-						<p>Saying yes or no has never been easier.<br>Add a message if you'd like.</p>
-						<p class="button-row">
-						<p>&nbsp;</p>
-				      <a href="https://itunes.apple.com/us/app/loop-by-eko/id931539244?mt=8", target="itunes_store" button type="button" class="btn btn-default btn-store"> Download For Free</a>
-					</p>
-					</div>
-					
+						</p>
 				</div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(images/slide2.jpg);"></div>
+                <div class="sliderbuttons2">
+                		<p>
+                		<a href="https://itunes.apple.com/us/app/loop-by-eko/id931539244?mt=8", target="itunes_store" button type="button" class="btn btn-default btn-store"> Download For Free</a>
+						</p>
+				</div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(images/slide3.jpg);"></div>
+                <div class="sliderbuttons3">
+                		<p>
+            			<a href="https://itunes.apple.com/us/app/loop-by-eko/id931539244?mt=8", target="itunes_store" button type="button" class="btn btn-default btn-store3">Get The App</a>
+						</p>
+				</div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+	<!--ABOUT SECTION-->
+		<div id="about" class="section team full-panel hidden-xs">
+			<div class="container">
+				<div style="align:center; top:25%;">
+				<p>.</p>
+				<p>.</p>
+				<p>.</p>
+				<p><h1><font color="white" align="center">WE BUILD SOFTWARE THAT HELPS PEOPLE DO GREAT THINGS</font></h1><br></p>
+				<p><font color="white" align="center">Eko is a New York & Bangkok based company focused on building tools that unlock the full potential of mobile in the workplace. Our products are already used by companies representing $3.3 billion in revenue, and has confirmed deployment plans to companies representing over $20 billion in total revenue.</font></p>
+				</div>
+				<div id="wrapper">
+					<div class="grid-block-container">
+					    	<div class="grid-block standard">
+					        	<div class="caption">
+					            	<h3>Korawad Chearavanont, CEO</h3>
+					            	<p> Bangkok & New York City</p>
+					            </div>
+					        	<img src="images/about/1.jpg" />
+					        </div>
+        
+					        <div class="grid-block slide">
+					        	<div class="caption">
+					            	<h3>David Zhang, CTO</h3>
+					                <p>Bangkok & New York City</p>
+					            </div>
+					        	<img src="images/about/2.jpg" />
+					        </div>
+
+					    	<div class="grid-block standard">
+					        	<div class="caption">
+					            	<h3>Bernie Tay, COO & CMO</h3>
+					                <p>Bangkok</p>
+					            </div>
+					        	<img src="images/about/3.jpg" />
+					        </div>
+        
+					        <div class="grid-block slide">
+					        	<div class="caption">
+					            	<h3>Cesar Devers, WebApp Consultant</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/4.jpg" />
+					        </div>
+
+					    	<div class="grid-block standard">
+					        	<div class="caption">
+					            	<h3>Steven Grace, Senior Software Engineer</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/5.jpg" />
+					        </div>
+        
+					        <div class="grid-block slide">
+					        	<div class="caption">
+					            	<h3>Richard Kroon, Senior Software Engineer</h3>
+					            	<p>New York City</p>
+					            </div>
+					        	<img src="images/about/6.jpg" />
+					        </div>
+
+					    	<div class="grid-block standard">
+					        	<div class="caption">
+					            	<h3>Ada Lau, UI/UX Designer</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/7.jpg" />
+					        </div>
+        
+					        <div class="grid-block slide">
+					        	<div class="caption">
+					            	<h3>Jes Osrow, Human Resources Generalist & Intern Program Director</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/8.jpg" />
+					        </div>
+
+					    	<div class="grid-block standard">
+					        	<div class="caption">
+					            	<h3>Raman Rajakannan, CFO</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/9.jpg" />
+					        </div>
+        
+					        <div class="grid-block slide">
+					        	<div class="caption">
+					            	<h3>David Shen, Software Engineer</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/10.jpg" />
+					        </div>
+
+					    	<div class="grid-block standard">
+					        	<div class="caption">
+					            	<h3>Alvin Zhou, Marketing & Media Manager</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/11.jpg" />
+					        </div>
+        
+					        <div class="grid-block slide">
+					        	<div class="caption">
+					            	<h3>Touchanon Del Castillo, Marketing Associate</h3>
+					            	<p> Bangkok</p>
+					            </div>
+					        	<img src="images/about/12.jpg" />
+					        </div>					        
+
+					    	<div class="grid-block standard">
+					        	<div class="caption">
+					            	<h3>Decha Kanjanakultomrong, Accounting Manager</h3>
+					                <p>Bangkok</p>
+					            </div>
+					        	<img src="images/about/13.jpg" />
+					        </div>
+        
+					        <div class="grid-block slide">
+					        	<div class="caption">
+					            	<h3>Kharuntharat Rungsiyarom, Account Manager</h3>
+					                <p>Bangkok</p>
+					            </div>
+					        	<img src="images/about/14.jpg" />
+					        </div>
+
+					    	<div class="grid-block standard">
+					        	<div class="caption">
+					            	<h3>Piyaporn Sittichatburana, Senior Sales Manager</h3>
+					                <p>Bangkok</p>
+					            </div>
+					        	<img src="images/about/15.jpg" />
+					        </div>
+        
+					        <div class="grid-block slide">
+					        	<div class="caption">
+					            	<h3>Lyra Schweizer, Joint Ventures Associate</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/16.jpg" />
+					        </div>
+
+					    	<div class="grid-block standard">
+					        	<div class="caption">
+					            	<h3>Miranda Coss, Cartoon, Animation & Graphics Intern</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/17.jpg" />
+					        </div>
+        
+					        <div class="grid-block slide">
+					        	<div class="caption">
+					            	<h3>Jonathan D'Ambrosio, Cartoon, Animation & Graphics Intern</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/18.jpg" />
+					        </div>
+
+					    	<div class="grid-block standard">
+					        	<div class="caption">
+					            	<h3>Marley Diazdelvalle, Cartoon, Animation & Graphics Interne</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/19.jpg" />
+					        </div>
+        
+					        <div class="grid-block slide">
+					        	<div class="caption">
+					            	<h3>José Matheu, Cartoon, Animation & Graphics Intern</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/20.jpg" />
+					        </div>
+
+					    	<div class="grid-block standard">
+					        	<div class="caption">
+					            	<h3>Brandon Ouellette, Cartoon, Animation & Graphics Intern</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/21.jpg" />
+					        </div>
+        
+					        <div class="grid-block slide">
+					        	<div class="caption">
+					            	<h3>Kyle Ouellette, Cartoon, Animation & Graphics Intern</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/22.jpg" />
+					        </div>
+
+					    	<div class="grid-block standard">
+					        	<div class="caption">
+					            	<h3>Malik Smith, Cartoon, Animation & Graphics Intern</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/23.jpg" />
+					        </div>
+        
+					        <div class="grid-block slide">
+					        	<div class="caption">
+					            	<h3>Laura Lu Wang, UX/UI Intern</h3>
+					                <p>New York City</p>
+					            </div>
+					        	<img src="images/about/24.jpg" />
+					        </div>
+
+        				</div>
+        			</div>
 			</div>
 		</div>
-
+	<!--END OF ABOUT SECTION-->
 		
-		<!-- desktop section -->
-		<div class="section stickers full-panel hidden-xs">
+	<!-- CONTACT SECTION-->
+		<div id="contact" class="section stickers full-panel hidden-xs">
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-1 padded-text"></div>
-					<div class="col-sm-4 padded-text">
-						<h3>Loops are forever.</h3>
-						<p>All Loops are archived for easy access.<br>Never lose track of commitments again.
-							<p>&nbsp;</p>
-							<p class="button-row">
-				      		<a href="https://itunes.apple.com/us/app/loop-by-eko/id931539244?mt=8", target="itunes_store" button type="button" class="btn btn-default btn-store3">Get The App</a>
-							</p>
-					</div>
-
-					<div class="col-sm-7 screenshot-device2">
-						<img src="images/3rdpanel.png" class="img-responsive" alt="Responsive image">
-					</div>
-	
-				</div>
+				<p>.</p>
+				<p>.</p>
+				<p>.</p>
+				<h1><font color="black" align="right">EKO IS LOOKING FOR TALENTED DESIGNERS AND ENGINEERS TO JOIN OUR TEAM</font></h1>
+				<p><font color="white"><b>Do you have experience, passion, and talent in any of the following areas?</b>
+				<p>
+				<ul>
+				<li><font color="white">Java / Android application development</font></li>
+				<li><font color="white">Objective-C / iOS development</font></li>
+				<li><font color="white">Javascript, AngularJS frontend and Node backend</font></li>
+				<li><font color="white">Visual / UX designers</font></li>
+				<li><font color="white">Infrastructure / scaling, specifically with Node</font></li>
+				</ul>
+				</p>
+				<p><font color="white"></b>If you answered YES, please shoot us an email at <a href="mailto:jobs@ekoapp.com">jobs@ekoapp.com</a>.</b></font></p> 
 			</div>
 		</div>
+	<!--END OF CONTACT SECTION-->
+
 <!-- FOOTER -->
 <footer id="footer">
 	<div class="row">
@@ -160,11 +369,19 @@ $page = 'home';
 </footer>
 <!--END OF FOOTER-->
 
+<!--Button on Bottom to go to Top of Page-->
+	<script src="js/jquery.js"></script>
+	<a href="#top" class="cd-top">Top</a>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/main.js"></script> 
+
 <!--SCRIPTS-->
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="//code.jquery.com/jquery.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 	 <!-- custom JS -->
 	<script type="text/javascript" src="js/skrollr.min.js"></script>
@@ -182,6 +399,46 @@ $page = 'home';
 	  ga('create', 'UA-42797895-2', 'ekoapp.com');
 	  ga('send', 'pageview');
 	</script>
+
+	<!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 4000 
+    })
+    </script>
+
+	<!--PHOTO GRID ABOUT US-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('.standard').hover(
+			function(){
+				$(this).find('.caption').show();
+			},
+			function(){
+				$(this).find('.caption').hide();
+			}
+		);
+		$('.fade').hover(
+			function(){
+				$(this).find('.caption').fadeIn(250);
+			},
+			function(){
+				$(this).find('.caption').fadeOut(250);
+			}
+		);
+		$('.slide').hover(
+			function(){
+				$(this).find('.caption').slideDown(250);
+			},
+			function(){
+				$(this).find('.caption').slideUp(250);
+			}
+		);
+	});
+	</script>
+
+
 <!--END OF SCRIPTS-->
 
 	</body>
